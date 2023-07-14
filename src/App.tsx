@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import ConvertPage from './components/ConvertPage';
+import Home from './pages/Home';
+import ConvertPage from './pages/ConvertPage';
 
 function App() {
   return (
