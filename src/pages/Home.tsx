@@ -17,6 +17,7 @@ const Home = () => {
             <div className='container mx-auto max-w-5xl flex flex-wrap pt-5'>
             {loading && <Loader/>}
             {error && <ErrorMessage error={error}/>}
+            <TableHead />
             {valute?.map(obj => 
                 <table className="min-w-full">
                     <tbody>

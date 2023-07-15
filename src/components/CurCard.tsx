@@ -1,5 +1,4 @@
 import { IValute } from "../Models";
-import TableHead from "./TableHead";
 
 interface CurrencyProps {
     valute: IValute
@@ -20,11 +19,14 @@ const CurCard = ({valute}: CurrencyProps) => {
                 <td className="text-sm w-1/5 text-gray-900 font-light px-6 py-4 whitespace-nowrap text-left">
                     {valute.CharCode}
                 </td>
-                <td className="text-sm w-1/3 text-gray-900 font-light px-6 py-4 whitespace-nowrap text-left">
+                <td className="text-sm w-1/2 text-gray-900 font-light px-6 py-4 whitespace-nowrap text-left">
                     {valute.Name}
                 </td>
                 <td className={createClassName()}>
                     {valute.Value}
+                </td>
+                <td className="text-sm w-1/3 text-gray-900 font-medium px-6 py-4 whitespace-nowrap text-left">
+                    RUB
                 </td>
             </tr>
         </>
