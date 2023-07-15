@@ -3,11 +3,12 @@ import CurCard from "../components/CurCard";
 import ErrorMessage from "../components/Error";
 import Loader from "../components/Loader";
 import NavBar from "../components/NavBar";
+import TableHead from "../components/TableHead";
 import { useCurrency } from "../hooks/CurrencyHook";
 
 const Home = () => {
     const {valute, loading, error} = useCurrency()
-    
+    // console.log(valute)
     return ( 
         <>
         <NavBar/>
@@ -16,7 +17,12 @@ const Home = () => {
             <div className='container mx-auto max-w-5xl flex flex-wrap pt-5'>
             {loading && <Loader/>}
             {error && <ErrorMessage error={error}/>}
-                <p></p>
+            {valute?.map(obj => 
+                <table className="min-w-full">
+                    <tbody>
+                        <CurCard valute={obj} />
+                    </tbody>
+                </table>)}
             </div>
         </div>
         </>
