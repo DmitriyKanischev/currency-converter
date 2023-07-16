@@ -1,4 +1,3 @@
-import { IValute } from "../Models";
 import CurCard from "../components/CurCard";
 import ErrorMessage from "../components/Error";
 import Loader from "../components/Loader";
