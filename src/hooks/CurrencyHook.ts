@@ -6,7 +6,7 @@ export function useCurrency() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
 
-    const [valute, setValute] = useState<IValute[] | null>([])
+    const [valute, setValute] = useState<IValute[]>([])
 
     async function fetchCurrncy() {
         try {

@@ -8,7 +8,6 @@ import { useCurrency } from "../hooks/CurrencyHook";
 
 const Home = () => {
     const {valute, loading, error} = useCurrency()
-    // console.log(valute)
     return ( 
         <>
         <NavBar/>
