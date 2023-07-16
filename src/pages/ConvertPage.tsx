@@ -31,12 +31,10 @@ const ConvertPage = () => {
                             <div className="w-20 h-10 mr-1 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">USD</div>
                             <div className="w-20 h-10 mr-1 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">EUR</div> */}
 
-
-                            {/* <div className="w-20 h-10 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">...</div> */}
                             <SelectField
                                 defaultOption="..."
                                 options={charCodesArr}
-                                name='valute'
+                                name='inputValue'
                                 // onChange={handleChange}
                                 value={charCodesArr}
                         />
@@ -55,18 +53,19 @@ const ConvertPage = () => {
                             {/* <div className="w-20 h-10 mr-1 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">RUR</div>
                             <div className="w-20 h-10 mr-1 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">USD</div>
                             <div className="w-20 h-10 mr-1 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">EUR</div> */}
-                            {/* <div className="w-20 h-10 bg-slate-100 py-[8px] cursor-pointer border rounded text-center">...</div> */}
+
                             <SelectField
                                 defaultOption="..."
                                 options={charCodesArr}
-                                name='valute'
+                                name='outputValue'
                                 value={charCodesArr}
                             />
                         </div>
                         <input 
                             type="number" 
                             className="border py-2 px-4 rounded flex flex-col text-4xl h-48 items-center justify-between mb-4 bg-slate-100"
-                            value={test()} />
+                            value={test()}
+                            disabled />
                     </div>
                 </div>
             </div>

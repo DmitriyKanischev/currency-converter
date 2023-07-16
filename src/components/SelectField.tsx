@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IValute } from "../Models";
 
 interface SelectProps {
     defaultOption: string,
