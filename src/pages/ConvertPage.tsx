@@ -70,6 +70,7 @@ const ConvertPage = () => {
                         </div>
                         <input 
                             type="number" 
+                            min="0"
                             className="border py-2 px-4 rounded flex flex-col text-4xl h-48  items-center justify-between mb-4 bg-slate-100"
                             value={num}
                             onChange={handleChangeInput}
