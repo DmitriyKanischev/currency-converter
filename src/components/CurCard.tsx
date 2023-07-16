@@ -5,7 +5,6 @@ interface CurrencyProps {
 }
 
 const CurCard = ({valute}: CurrencyProps) => {
-    console.log(valute)
     const classForValue = "text-sm w-1/3 font-bold px-6 py-4 whitespace-nowrap text-left"
     const createClassName = () => {
         return valute.Previous < valute.Value ? classForValue + " text-red-500" : classForValue + " text-lime-500";

@@ -10,11 +10,9 @@ const ConvertPage = () => {
 
     const handleChange = ({target}: any) => {
         setData(target.value)
-        console.log(target.value)
     }
     const handleChange2 = ({target}: any) => {
         setData2(target.value)
-        console.log(target.value)
     }
     
     const handleChangeInput = ({target}: any) => {
