@@ -16,12 +16,12 @@ const Home = () => {
             {loading && <Loader/>}
             {error && <ErrorMessage error={error}/>}
             <TableHead />
-            {valute?.map(obj => 
                 <table className="min-w-full">
                     <tbody>
-                        <CurCard valute={obj} />
+            {valute?.map(obj => 
+                        <CurCard valute={obj} />)}
                     </tbody>
-                </table>)}
+                </table>
             </div>
         </div>
         </>
